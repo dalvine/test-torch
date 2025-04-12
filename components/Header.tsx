@@ -47,8 +47,9 @@ const Header: React.FC = () => {
 
             {isMenuOpen && (
                 <div
-                    className={`md:hidden fixed top-0 left-0 w-full h-full bg-black transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'
-                        } z-50`}
+                    className={`md:hidden fixed top-0 left-0 w-full h-full bg-black transform transition-transform duration-300 ease-in-out ${
+                        isMenuOpen ? 'translate-y-0' : '-translate-y-full'
+                    } z-50`}
                 >
                     <button
                         className="absolute top-4 right-4 text-white"
