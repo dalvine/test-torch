@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Navigator from './Navigator';
+import CustomButton from './CustomButton';
 
 const navItems = [
     { label: 'Features', href: '#' },
@@ -14,8 +15,8 @@ const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="text-white p-4 flex justify-between items-center fixed space-x-4 top-0 left-0 w-full z-50">
-            <div className="flex items-center  sm:space-x-10 lg:space-x-24">
+        <header className="text-white py-4 flex justify-between items-center space-x-4 w-full z-50">
+            <div className="flex items-center  sm:space-x-8 lg:space-x-20">
                 <div className="flex items-center">
                     <Image
                         src="/logo.png"
@@ -32,12 +33,8 @@ const Header: React.FC = () => {
             </div>
             <div className="flex items-center space-x-4">
                 <div className="hidden sm:flex space-x-4">
-                    <button className="cursor-pointer bg-[#333333] text-white px-4 py-2 rounded-md shadow-sm hover:bg-gray-700 transition font-semibold ">
-                        Sign in
-                    </button>
-                    <button className="cursor-pointer bg-[#FFC107] text-black px-4 py-2 rounded-md shadow-sm hover:bg-yellow-600 transition font-semibold">
-                        Get started
-                    </button>
+                    <CustomButton value="Sign in" />
+                    <CustomButton type="filled" value="Get started" />
                 </div>
 
                 <button
@@ -50,9 +47,8 @@ const Header: React.FC = () => {
 
             {isMenuOpen && (
                 <div
-                    className={`md:hidden fixed top-0 left-0 w-full h-full bg-black transform transition-transform duration-300 ease-in-out ${
-                        isMenuOpen ? 'translate-y-0' : '-translate-y-full'
-                    } z-50`}
+                    className={`md:hidden fixed top-0 left-0 w-full h-full bg-black transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'
+                        } z-50`}
                 >
                     <button
                         className="absolute top-4 right-4 text-white"
