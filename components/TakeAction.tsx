@@ -18,7 +18,7 @@ const TakeAction: React.FC = () => {
     return (
         <section>
             <GradientTitle component="h2" text="Take action from insights" />
-            <div className="mt-5 md:mt-15 rounded-md max-sm:flex flex-col sm:grid grid-cols-4 grid-rows-5 gap-4 md:gap-6 xl:gap-8 w-full">
+            <div className="mt-5 md:mt-15 rounded-md max-sm:flex flex-col sm:grid grid-cols-4 grid-rows-5 in-grid-gap w-full">
                 <div className={classNames(styles.card, styles.highCard)}>
                     <FeatureCard
                         icon={CiGrid42}

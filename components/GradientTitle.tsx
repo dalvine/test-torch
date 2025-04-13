@@ -40,7 +40,11 @@ const GradientTitle: React.FC<GradientTextProps> = ({
 
     return (
         <Component
-            className={classNames('font-medium', className, fontSizeStyle)}
+            className={classNames(
+                'font-medium md:max-w-[40%]',
+                className,
+                fontSizeStyle,
+            )}
         >
             {partsText[0]}
             <span

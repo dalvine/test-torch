@@ -9,14 +9,20 @@
     --color-main-0: #ffc34f;
     --color-main-1: #f9d586;
     --color-main-2: #fcf1d5;
-    --color-main-3: #ffffff;
+    --color-main-3: #fcf0d8;
+    --color-main-4: #ffffff;
+}
+
+.in-grid-gap {
+    @apply gap-4 md:gap-6 xl:gap-8;
 }
 
 :root {
     --color-main-0: #ffc34f;
     --color-main-1: #f9d586;
     --color-main-2: #fcf1d5;
-    --color-main-3: #ffffff;
+    --color-main-3: #fcf0d8;
+    --color-main-4: #ffffff;
     --cartesian-grid: #262827;
 }
 

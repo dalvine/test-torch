@@ -31,7 +31,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             <div className="w-full flex flex-col gap-4">
                 {title && <h3 className="text-xl sm:text-3xl">{title}</h3>}
                 {subtitle && <h4 className="text-md sm:text-xl">{subtitle}</h4>}
-                <p className="text-sm sm:text-md">{text}</p>
+                <p className="text-sm text-gray-400 sm:text-md">{text}</p>
             </div>
         </div>
     );

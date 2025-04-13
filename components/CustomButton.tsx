@@ -21,7 +21,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
             case 'normal':
                 return 'bg-[#333333] text-white';
             case 'filled':
-                return `bg-[var(--color-main-0)] text-black`;
+                return `bg-main-0 text-black`;
         }
     }, [type]);
     const sizeStyle = useMemo(() => {
