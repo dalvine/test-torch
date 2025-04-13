@@ -1,5 +1,5 @@
 import React from 'react';
-import GradientText from './GradientText';
+import GradientTitle from './GradientTitle'
 import classNames from 'classnames';
 import LineChart from './LineChart';
 import BarChartCustom from './BarChart';
@@ -70,14 +70,15 @@ const mockSingleBars = [
 
 const Greeting: React.FC<MainSectionProps> = ({ className }) => {
     return (
-        <div
+        <section
             className={classNames(
                 'flex flex-col lg:flex-row space-y-6 lg:space-x-4  w-full',
                 className,
             )}
         >
             <div className="flex flex-col gap-12 md:gap-17 justify-start">
-                <GradientText
+                <GradientTitle
+                    component='h1'
                     text="Powerful data insights for all"
                     className="sm:max-w-[80%]  lg:max-w-none text-4xl sm:text-7xl"
                 />
@@ -108,7 +109,7 @@ const Greeting: React.FC<MainSectionProps> = ({ className }) => {
                 </div>
             </div>
 
-            <div className=" min-h-80 sm:min-h-100 lg:h-150 xl:h-200 rounded-md  p-2 sm:p-5 lg:p-7 xl:p-10 bg-cardBackground grid grid-cols-4 grid-rows-5 gap-4 md:gap-6 xl:gap-8 w-full">
+            <div className="min-h-80 sm:min-h-100 lg:h-150 xl:h-200 rounded-md  p-2 sm:p-5 lg:p-7 xl:p-10 bg-cardBackground grid grid-cols-4 grid-rows-5 gap-4 md:gap-6 xl:gap-8 w-full">
                 <div className="bg-[#202221] row-span-3 col-span-2 rounded-md w-full h-f">
                     <BarChartCustom
                         data={mockDoubleBars}
@@ -149,7 +150,7 @@ const Greeting: React.FC<MainSectionProps> = ({ className }) => {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
