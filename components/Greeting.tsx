@@ -1,5 +1,5 @@
 import React from 'react';
-import GradientTitle from './GradientTitle'
+import GradientTitle from './GradientTitle';
 import classNames from 'classnames';
 import LineChart from './LineChart';
 import BarChartCustom from './BarChart';
@@ -76,11 +76,11 @@ const Greeting: React.FC<MainSectionProps> = ({ className }) => {
                 className,
             )}
         >
-            <div className="flex flex-col gap-12 md:gap-17 justify-start">
+            <div className="sm:max-w-[80%] flex flex-col gap-12 md:gap-17 justify-start">
                 <GradientTitle
-                    component='h1'
+                    component="h1"
                     text="Powerful data insights for all"
-                    className="sm:max-w-[80%]  lg:max-w-none text-4xl sm:text-7xl"
+                    className="text-4xl sm:text-7xl"
                 />
                 <p className="sm:max-w-[60%] lg:max-w-none text-lg">
                     Torch makes data analysis easy for everyone. Visualise key
