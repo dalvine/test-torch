@@ -80,7 +80,6 @@ const Greeting: React.FC<MainSectionProps> = ({ className }) => {
                 <GradientTitle
                     component="h1"
                     text="Powerful data insights for all"
-                    className="text-4xl sm:text-7xl"
                 />
                 <p className="sm:max-w-[60%] lg:max-w-none text-lg">
                     Torch makes data analysis easy for everyone. Visualise key
