@@ -108,7 +108,7 @@ const Greeting: React.FC<MainSectionProps> = ({ className }) => {
                 </div>
             </div>
 
-            <div className="min-h-80 sm:min-h-100 lg:h-150 xl:h-200 rounded-md  p-2 sm:p-5 lg:p-7 xl:p-10 bg-cardBackground grid grid-cols-4 grid-rows-5 gap-4 md:gap-6 xl:gap-8 w-full">
+            <div className="min-h-80 sm:min-h-100 lg:h-150 xl:h-200 rounded-md  p-2 sm:p-5 lg:p-7 xl:p-10 bg-cardBackground grid grid-cols-4 grid-rows-5 in-grid-gap w-full">
                 <div className="bg-[#202221] row-span-3 col-span-2 rounded-md w-full h-f">
                     <BarChartCustom
                         data={mockDoubleBars}
