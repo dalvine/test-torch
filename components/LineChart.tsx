@@ -38,11 +38,9 @@ const LineChartCustom = <T extends Record<string, number>[]>({
                     hide={true}
                     domain={[
                         (dataMin: number) => {
-                            console.log({ dataMin });
                             return dataMin * 0.2;
                         },
                         (dataMax: number) => {
-                            console.log({ dataMax });
                             return dataMax * 1.5;
                         },
                     ]}
