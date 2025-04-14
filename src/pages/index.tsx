@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import Greeting from '../../components/Greeting';
 import TakeAction from '../../components/TakeAction';
 import RealTimeInsights from '../../components/RealTimeInsights';
+import TurnComplex from '../../components/TurnComplex';
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
                 <Greeting />
                 <TakeAction />
                 <RealTimeInsights />
+                <TurnComplex />
             </main>
         </>
     );
