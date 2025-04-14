@@ -3,8 +3,7 @@
 ## Проверка и запуск проекта
 
 ```
-    npm run prettier
-    npm run lint
+    npm i
     npm run build
     npm run start
 ```
