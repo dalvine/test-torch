@@ -19,7 +19,7 @@ interface BarChartProps<T extends DataRecord[]> {
     data: T;
     dataKeys: Array<DataKeys<T>>;
     fillingType?: 'cell' | 'section';
-    showedLabel: boolean;
+    showedLabel?: boolean;
 }
 
 const BarChartCustom = <T extends DataRecord[]>({
@@ -33,6 +33,7 @@ const BarChartCustom = <T extends DataRecord[]>({
     const barCategoryGap = useMemo(() => {
         switch (breakpoint) {
             case '2xl':
+                return 12;
             case 'xl':
             case 'lg':
             case 'md':
@@ -40,7 +41,7 @@ const BarChartCustom = <T extends DataRecord[]>({
             case 'sm':
                 return 5;
             case 'xs':
-                return 2;
+                return 3;
         }
     }, [breakpoint]);
 
@@ -54,7 +55,7 @@ const BarChartCustom = <T extends DataRecord[]>({
             case 'sm':
                 return '7%';
             case 'xs':
-                return '4%';
+                return '2%';
         }
     }, [breakpoint]);
 
@@ -67,7 +68,7 @@ const BarChartCustom = <T extends DataRecord[]>({
             case 'sm':
                 return 10;
             case 'xs':
-                return 5;
+                return 2;
         }
     }, [breakpoint]);
 
@@ -77,11 +78,11 @@ const BarChartCustom = <T extends DataRecord[]>({
             case 'xl':
             case 'lg':
             case 'md':
-                return 24;
+                return 22;
             case 'sm':
-                return 18;
+                return 14;
             case 'xs':
-                return 12;
+                return 6;
         }
     }, [breakpoint]);
 
@@ -107,6 +108,7 @@ const BarChartCustom = <T extends DataRecord[]>({
                         tickMargin={tickMargin}
                         tickLine={false}
                         tick={{ fontSize: tickFontSize }}
+                        tickSize={10}
                     />
                 )}
 

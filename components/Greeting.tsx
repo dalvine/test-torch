@@ -72,11 +72,11 @@ const Greeting: React.FC<MainSectionProps> = ({ className }) => {
     return (
         <section
             className={classNames(
-                'flex flex-col lg:flex-row space-y-6 lg:space-x-4  w-full',
+                'flex flex-col lg:flex-row gap-10 lg:gap-15  w-full',
                 className,
             )}
         >
-            <div className="sm:max-w-[80%] flex flex-col gap-12 md:gap-17 justify-start">
+            <div className="flex-1 sm:max-w-[80%] flex flex-col gap-8 md:gap-10 justify-start">
                 <GradientTitle
                     component="h1"
                     text="Powerful data insights for all"
@@ -108,7 +108,7 @@ const Greeting: React.FC<MainSectionProps> = ({ className }) => {
                 </div>
             </div>
 
-            <div className="min-h-80 sm:min-h-100 lg:h-150 xl:h-200 rounded-md  p-2 sm:p-5 lg:p-7 xl:p-10 bg-cardBackground grid grid-cols-4 grid-rows-5 in-grid-gap w-full">
+            <div className=" flex-1 min-h-80 sm:min-h-100 lg:h-150 xl:h-200 rounded-md  p-2 sm:p-5 lg:p-7 xl:p-10 bg-cardBackground grid grid-cols-4 grid-rows-5 in-grid-gap w-full">
                 <div className="bg-[#202221] row-span-3 col-span-2 rounded-md w-full h-f">
                     <BarChartCustom
                         data={mockDoubleBars}

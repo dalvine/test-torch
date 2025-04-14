@@ -16,8 +16,8 @@ const Header: React.FC = () => {
 
     return (
         <header className="text-white py-4 flex justify-between items-center space-x-4 w-full z-50">
-            <div className="flex items-center  sm:space-x-8 lg:space-x-20">
-                <div className="flex items-center">
+            <div className="flex items-center  sm:space-x-7 lg:space-x-20">
+                <div className="flex items-center w-25">
                     <Image
                         src="/logo.png"
                         alt="Torch Logo"
