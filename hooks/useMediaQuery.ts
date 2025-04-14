@@ -24,7 +24,7 @@ const getCurrentBreakpoint = (): Breakpoint | '' => {
 
 export const useMediaQuery = (): Breakpoint | '' => {
     const [breakpoint, setBreakpoint] = useState<Breakpoint | ''>(
-        getCurrentBreakpoint,
+        getCurrentBreakpoint(),
     );
 
     useEffect(() => {
